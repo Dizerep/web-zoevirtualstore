@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos Boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Estilos AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <header id="header">
+        <div class="superior-container">
+          <!-- Imagen del logo -->
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../images/imagen-de-logo.png" alt="logo" />
+            </a>
+          </div>
+  
+          <!-- Barra de búsqueda -->
+          <div class="barra-busqueda">
+            <form class="search-form" action="/Buscar" method="GET">
+              <input type="text" name="query" placeholder="Buscar..." />
+              <button type="submit">🔍</button>
+            </form>
+          </div>
+  
+          <!-- Iconos de actividad -->
+          <div class="iconos-act">
+            <a href="#">
+              <img src="../images/icono-favoritos.png" alt="Mis Favoritos" />
+            </a>
+            <a href="#">
+              <img
+                class="icono-registro"
+                src="../images/icono-registro.png"
+                alt="Registrarse"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../images/icono-carritodecompras.png"
+                alt="Carrito de Compras"
+              />
+            </a>
+          </div>
+        </div>
+      
+          <!-- Barra de navegación principal  boostrap-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link" aria-current="page" href="./tienda.html">Tienda</a>
+                <a class="nav-link activo" aria-current="page" href="#">Blog</a>
+                <a class="nav-link" aria-current="page" href="./nosotros.html" >Nosotros</a >
+                <a class="nav-link" aria-current="page" href="./contacto.html" >Contacto</a >
+              </div>
+            </div>
+          </div>
+        </nav>
+  
+      </header>
+
+    <main id="main">
+        <div class="blog-zvs">
+            <h1 class="titulo-blog">-BLOG-ZOEVIRTUALSTORE-</h1>
+        </div>
+
+        <section class="secciones-blog">
+            <div class="img1-blog">
+                <img src="../images/zoevirtual-blog.jpg" alt="Nuestros-productos">
+            </div>
+
+            <div class="info-productosblog">
+                <h2 class="titulo1-blog">¿Que tienen de especial los productos de ZoeVirtualStore?</h2>
+                <p class="parrafo1-blog">Los productos de Zoe Virtual Store se destacan por ofrecer una combinación única de magia y calidad. Nuestros productos Disney importados traen la autenticidad y encanto de tus personajes favoritos directamente desde el extranjero, garantizando detalles originales y de alta calidad que no encontrarás en cualquier lugar. Además, contamos con una selección de productos no importados, cuidadosamente diseñados y seleccionados para reflejar creatividad y exclusividad. Cada artículo de Zoe Virtual Store está pensado para sorprender y encantar, haciendo que cada regalo sea especial y memorable.</p>
+
+                <a href="#" class="leer-mas" id="leer-mas" onclick="toggleLike(event)"> --- Leer más</a>
+            </div>
+
+            <div class="info-llegahalloween">
+                <h2 class="titulo2-blog">🎃¡Celebra Halloween con estilo en Zoe Virtual Store! 👻</h2>
+                <p class="parrafo2-blog">🎃Este Halloween, sorprende a tus seres queridos con detalles únicos que solo encontrarás en nuestra tienda. Desde adorables peluches hasta llaveros espeluznantes, en Zoe Virtual Store tenemos los regalos perfectos para esa ocasión especial. Ya sea que estés buscando un detalle divertido o algo más encantador, nuestros productos harán que este Halloween sea inolvidable.
+
+                No esperes más y llena de magia y sorpresa este Halloween con un regalo de Zoe Virtual Store. ¡Haz de cada momento algo especial!✨
+                </p>
+
+                <a href="#" class="leer-mas" id="leer-mas" onclick="toggleLike(event)"> --- Leer más</a>
+            </div>
+
+            <div class="img2-blog">
+                <img src="../images/llega-halloween.png" alt="">
+            </div>
+            </div>
+            
+            <div class="img3-blog">
+                <img src="../images/navidad-blog.jpg" alt="llega-navidad">
+            </div>
+
+            <div class="info-lleganavidad">
+                <h2 class="titulo3-blog">🎄¡La Navidad está a la vuelta de la esquina!✨</h2>
+                <p class="parrafo3-blog">🎅En Zoe Virtual Store nos estamos preparando para ofrecerte los detalles más especiales para esta temporada mágica. Desde tiernos peluches navideños hasta llaveros y artículos de regalo llenos de encanto, tenemos todo lo que necesitas para sorprender a tus seres queridos.
+
+                Esta Navidad, regala sonrisas y momentos inolvidables con un detalle de Zoe Virtual Store. Cada regalo es una oportunidad para demostrar cuánto te importan las personas que amas. ¡Explora nuestra tienda y encuentra el regalo perfecto para hacer que estas fiestas brillen aún más!
+                    
+                ✨ ¡Haz de esta Navidad una celebración inolvidable con Zoe Virtual Store! 🎁
+            </p>
+
+            <a href="#" class="leer-mas" id="leer-mas" onclick="toggleLike(event)"> --- Leer más</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer"></footer>
+        <!-- Logo y redes sociales -->
+        <div class="area-redes-logo">
+            <section class="logo-footer">
+                <img src="../images/imagen-de-logo.png" alt="logo">
+            </section>
+
+            <section class="redes-footer">
+                <a href="https://wa.me/573106195634" target="_blank">
+                    <img class="icono-whatsapp" src="../images/whatsapp-logo.png" alt="whatsapp">
+                </a>
+        
+                <a href="https://www.facebook.com/dianarp/" target="_blank">
+                    <img class="icono-facebook" src="../images/facebook-logo.png" alt="facebook">
+                </a>
+        
+                <a href="mailto:correo@ejemplo.com" target="_blank">
+                    <img class="icono-email" src="../images/email-logo.png" alt="facebook">
+                </a>
+        
+                <a href="https://www.instagram.com/dianaparedesperez/" target="_blank">
+                    <img class="icono-instagram" src="../images/instagram-logo.png" alt="instagram">
+                </a>
+            </section>
+        </div>
+
+        <!-- Información de derechos reservados -->
+        <article class="copy-footer">           
+            <h3>© 2024. ZOEViRTUALSTORE - Tienda de regalos Sogamoso y alrededores. Todos los derechos reservados.</h3>
+            <h4>Creado por: Diana Rocío Paredes</h4>
+        </article>
+
+    <!-- Links adicionales -->    
+        <section class="nav-footer">
+            <ul class="links-footer">
+                <li><a href="#">TIENDA</a></li>
+                <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
+                <li><a href="../pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <!--Scripts de Bootstrap-->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+          AOS.init();
+      </script>
+</body>
+</html>
