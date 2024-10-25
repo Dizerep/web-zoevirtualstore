@@ -371,7 +371,6 @@ html::-webkit-scrollbar-thumb:hover {
     flex-direction: column;
 }
 
-
 @media only screen and (min-width: 768px) {
     .contenedor-categorias {
         flex-direction: row;
