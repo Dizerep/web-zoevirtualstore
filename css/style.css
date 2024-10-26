@@ -525,6 +525,15 @@ html::-webkit-scrollbar-thumb:hover {
     margin: 15px;
     justify-items: center;
     align-items: center;
+    grid-column: 1 / span 2;
+}
+
+@media only screen and (max-width: 767px) {
+    .secciones-blog{
+        grid-template-columns: 1fr;
+        padding: 40px;
+        margin: 40px;
+    }
 }
 
 /*Estilos imagenes Blog*/
@@ -595,7 +604,6 @@ html::-webkit-scrollbar-thumb:hover {
     margin-left: 20px;
     padding: 3px;
 }
-
 .nav-copy-footer {
     padding: 0;
     border-radius: 10px;
