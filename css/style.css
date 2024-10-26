@@ -540,6 +540,12 @@ html::-webkit-scrollbar-thumb:hover {
     color: rgb(7, 138, 138);
 }
 
+@media only screen and (max-width: 767px) {
+    .contenedor-categorias {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 /*ESTILOS FOOTER*/
 .footer a:hover {
