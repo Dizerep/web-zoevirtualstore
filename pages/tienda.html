@@ -78,110 +78,112 @@
       </header>
 
     <main id="main">
-        <div>
-            <h1 class="titulo-tienda">NUESTROS PRODUCTOS</h1>
-            <p class="invitacion-tienda">En Zoe Virtual Store te ofrecemos los detalles perfectos para cada ocasión especial. Ya sea un cumpleaños, aniversario o cualquier evento importante, contamos con una variedad de productos diseñados para hacer de cada momento algo único. Te invitamos a explorar nuestra tienda y encontrar ese regalo ideal que hará sonreír a tus seres queridos. ¡Visítanos y comienza a comprar hoy mismo!</p>
-        </div>
-
-        <div class="contenedor-categorias">
-            <section class="categorias-tienda">
-                <div>
+        <div class="main-container">
+            <div>
+                <h1 class="titulo-tienda">NUESTROS PRODUCTOS</h1>
+                <p class="invitacion-tienda">En Zoe Virtual Store te ofrecemos los detalles perfectos para cada ocasión especial. Ya sea un cumpleaños, aniversario o cualquier evento importante, contamos con una variedad de productos diseñados para hacer de cada momento algo único. Te invitamos a explorar nuestra tienda y encontrar ese regalo ideal que hará sonreír a tus seres queridos. ¡Visítanos y comienza a comprar hoy mismo!</p>
+            </div>
+    
+            <div class="contenedor-categorias">
+                <section class="categorias-tienda">
+                    <div>
+                        
+                    </div>
+                    <div class="barra-orden-productos">
+                        <select>
+                            <option value="predeterminado">Orden por ultimos</option>
+                            <option value="precio-bajo-alto">Ordenar por precio: bajo a alto</option>
+                            <option value="precio-alto-bajo">Ordenar por precio: alto a bajo</option>
+                        </select>
+                    </div>
                     
-                </div>
-                <div class="barra-orden-productos">
-                    <select>
-                        <option value="predeterminado">Orden por ultimos</option>
-                        <option value="precio-bajo-alto">Ordenar por precio: bajo a alto</option>
-                        <option value="precio-alto-bajo">Ordenar por precio: alto a bajo</option>
-                    </select>
-                </div>
-                
-                <h2 class="titulo-categorias">CATEGORIAS</h2>
-                <ul class="lista-categorias">
-                    <li class="primer-elemento">
-                        <input name="peluches" type="checkbox" id="opction1" value="peluches">
-                        <label for="item1">Peluches</label>
-                    </li>
-                    <li>
-                        <input name="llaveros" type="checkbox" id="opction2" value="llaveros">
-                        <label for="items2">Llaveros</label>
-                    </li>
-                    <li>
-                        <input name="moda" type="checkbox" id="opction3" value="moda">
-                        <label for="items3">Moda</label>
-                    </li>
-                    <li>
-                        <input name="coleccionables" type="checkbox" id="opction4" value="coleccionables">
-                        <label for="items4">Coleccionables</label>
-                    </li>
-                    <li>
-                        <input name="halloween" type="checkbox" id="opction5" value="halloween">
-                        <label for="items5">Halloween</label>
-                    </li>
-                    <li>
-                        <input name="navidad" type="checkbox" id="opction6" value="navidad">
-                        <label for="items6">Navidad</label>
-                    </li>
-                    <li>
-                        <input name="accesorios" type="checkbox" id="opction7" value="accesorios">
-                        <label for="items7">Accesorios</label>
-                    </li>
-                    <li>
-                        <input name="ofertas" type="checkbox" id="opction8" value="ofertas">
-                        <label for="items8">Ofertas</label>
-                    </li>
-                    <li>
-                        <input name="novedades" type="checkbox" id="opction9" value="novedades">
-                        <label for="items9">Novedades</label>
-                    </li>
-                </ul>
-            </section>
-    
-            <section class="categoria-llaveros">
-                <div class="llavero1">
-                    <img class="img-llavero1" src="../images/llavero1.webp" alt="llaveros">
-                
-                    <div class="informacion-productos">
-                        <p class="precio">$18.000</p>
-    
-                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
-                        <a href="#" class="like-link" id="likeLink" onclick="toggleLike(event)">&#9829; Me gusta</a>
-                    </div>
-                </div>
-    
-                    <div class="llavero2">
-                        <img src="../images/llavero2.jpeg" alt="llaveros">
+                    <h2 class="titulo-categorias">CATEGORIAS</h2>
+                    <ul class="lista-categorias">
+                        <li class="primer-elemento">
+                            <input name="peluches" type="checkbox" id="opction1" value="peluches">
+                            <label for="item1">Peluches</label>
+                        </li>
+                        <li>
+                            <input name="llaveros" type="checkbox" id="opction2" value="llaveros">
+                            <label for="items2">Llaveros</label>
+                        </li>
+                        <li>
+                            <input name="moda" type="checkbox" id="opction3" value="moda">
+                            <label for="items3">Moda</label>
+                        </li>
+                        <li>
+                            <input name="coleccionables" type="checkbox" id="opction4" value="coleccionables">
+                            <label for="items4">Coleccionables</label>
+                        </li>
+                        <li>
+                            <input name="halloween" type="checkbox" id="opction5" value="halloween">
+                            <label for="items5">Halloween</label>
+                        </li>
+                        <li>
+                            <input name="navidad" type="checkbox" id="opction6" value="navidad">
+                            <label for="items6">Navidad</label>
+                        </li>
+                        <li>
+                            <input name="accesorios" type="checkbox" id="opction7" value="accesorios">
+                            <label for="items7">Accesorios</label>
+                        </li>
+                        <li>
+                            <input name="ofertas" type="checkbox" id="opction8" value="ofertas">
+                            <label for="items8">Ofertas</label>
+                        </li>
+                        <li>
+                            <input name="novedades" type="checkbox" id="opction9" value="novedades">
+                            <label for="items9">Novedades</label>
+                        </li>
+                    </ul>
+                </section>
         
+                <section class="categoria-llaveros">
+                    <div class="llavero1">
+                        <img class="img-llavero1" src="../images/llavero1.webp" alt="llaveros">
+                    
                         <div class="informacion-productos">
                             <p class="precio">$18.000</p>
-    
+        
                             <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
                             <a href="#" class="like-link" id="likeLink" onclick="toggleLike(event)">&#9829; Me gusta</a>
                         </div>
                     </div>
-    
-                    <div class="llavero3">
-                        <img src="../images/llavero3.webp" alt="llaveros">
-    
-                        <div class="informacion-productos">
-                            <p class="precio">$18.000</p>
-    
-                            <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
-                            <a href="#" class="like-link" id="likeLink" onclick="toggleLike(event)">&#9829; Me gusta</a>
+        
+                        <div class="llavero2">
+                            <img src="../images/llavero2.jpeg" alt="llaveros">
+            
+                            <div class="informacion-productos">
+                                <p class="precio">$18.000</p>
+        
+                                <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                                <a href="#" class="like-link" id="likeLink" onclick="toggleLike(event)">&#9829; Me gusta</a>
+                            </div>
                         </div>
-                    </div>
-    
-                    <div class="llavero4">
-                        <img src="../images/llavero4.webp" alt="llaveros">
-                
-                        <div class="informacion-productos">
-                            <p class="precio">$18.000</p>
-    
-                            <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
-                            <a href="#" class="like-link" id="likeLink" onclick="toggleLike(event)">&#9829; Me gusta</a>
+        
+                        <div class="llavero3">
+                            <img src="../images/llavero3.png" alt="llaveros">
+        
+                            <div class="informacion-productos">
+                                <p class="precio">$18.000</p>
+        
+                                <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                                <a href="#" class="like-link" id="likeLink" onclick="toggleLike(event)">&#9829; Me gusta</a>
+                            </div>
                         </div>
-                    </div>
-            </section>
+        
+                        <div class="llavero4">
+                            <img src="../images/llavero4.webp" alt="llaveros">
+                    
+                            <div class="informacion-productos">
+                                <p class="precio">$18.000</p>
+        
+                                <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                                <a href="#" class="like-link" id="likeLink" onclick="toggleLike(event)">&#9829; Me gusta</a>
+                            </div>
+                        </div>
+                </section>
+            </div>
         </div>
 
     </main>
