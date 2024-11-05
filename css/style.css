@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*LLAMADO A TODO DOC HTML*/
 /*ESTILOS RESET CSS*/
 * {
@@ -9,20 +10,6 @@
 }
 
 /*ESTILOS INDEX*/
-/*ESTRUCTURA DEL BODY*/
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-html {
-  scrollbar-width: thin; /* Para navegadores Firefox */
-  scrollbar-color: #3498db #f1f1f1; /* Color del thumb y del track en Firefox */
-}
-
 /* Para navegadores basados en WebKit (Chrome, Safari, Edge) */
 html::-webkit-scrollbar {
   width: 12px; /* Ancho del scrollbar */
@@ -42,13 +29,23 @@ html::-webkit-scrollbar-thumb:hover {
   background-color: #2980b9; /* Color del thumb al pasar el ratón por encima */
 }
 
-.main-container{
-    max-width: 1900px;
-    margin: 0 auto;
+html {
+  scrollbar-width: thin; /* Para navegadores Firefox */
+  scrollbar-color: #3498db #f1f1f1; /* Color del thumb y del track en Firefox */
+  /*ESTRUCTURA DEL BODY*/
+  /*Ajustes al logo*/
+  /*Estilos de barra de busqueda*/
+  /*Estilos de Iconos de actividad */
 }
-
-/*ESTRUCTURA DEL HEADER*/
-#header {
+html body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  /*ESTRUCTURA DEL HEADER*/
+}
+html body #header {
   width: 100%;
   text-align: center;
   background-color: #fff;
@@ -57,85 +54,71 @@ html::-webkit-scrollbar-thumb:hover {
   padding-top: 10px;
   padding-bottom: 0;
 }
-
-#header .superior-container {
+html body #header .superior-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 @media only screen and (min-width: 992px) {
-  #header .superior-container {
+  html body #header .superior-container {
     flex-direction: row;
   }
 }
-
-.navbar {
+html body #header .navbar {
   padding-bottom: 0;
 }
-
-.navbar .container-fluid {
+html body #header .navbar .container-fluid {
   background-color: rgb(35, 179, 179);
   padding-top: 10px;
   padding-bottom: 10px;
   justify-content: center;
 }
-
-@media only screen and (min-width: 992px) {
-  .navbar .container-fluid {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
-.navbar .container-fluid .collapse {
+html body #header .navbar .container-fluid .collapse {
   justify-content: center;
 }
-
-.navbar .container-fluid .collapse .navbar-nav {
-}
-
-.navbar .container-fluid .collapse .navbar-nav .nav-link {
+html body #header .navbar .container-fluid .collapse .navbar-nav .nav-link {
   color: white;
   font-size: 18px;
   min-width: 80px;
   padding: 10px 15px;
 }
-
-.navbar .container-fluid .collapse .navbar-nav .nav-link.activo {
+html body #header .navbar .container-fluid .collapse .navbar-nav .nav-link.activo {
   font-weight: bold;
 }
-
-.navbar .container-fluid .collapse .navbar-nav .nav-link:hover {
+html body #header .navbar .container-fluid .collapse .navbar-nav .nav-link:hover {
   background-color: rgb(32, 171, 255);
 }
-
-/*Ajustes al logo*/
-.logo img {
+@media only screen and (min-width: 992px) {
+  html body #header .navbar .container-fluid {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+html body .main-container {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+html .logo img {
   width: 100px;
   height: 100px;
   margin-right: 20px;
 }
-
-/*barra de busqueda*/
-.barra-busqueda {
+html .barra-busqueda {
   text-align: center;
   font-size: 20px;
   border: 0;
   width: 100%;
   max-width: 600px;
 }
-
-.barra-busqueda input {
+html .barra-busqueda input {
   width: 80%;
   padding: 8px;
   font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-
-.search-form button {
+html .barra-busqueda button {
   height: 40px;
   padding: 5px 10px;
   background-color: transparent;
@@ -146,16 +129,16 @@ html::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
   outline: none;
 }
-
-.search-form {
-  /* display: inline-block; */
+html .barra-busqueda button:hover {
+  background-color: #ddd;
+}
+html .search-form {
   background-color: rgb(247, 249, 250);
   border: 2px solid transparent;
   border-radius: 5px;
   padding: 10px;
 }
-
-.search-form input [type="text"] {
+html input-search [type=text] {
   width: 300px;
   height: 40px;
   padding: 10px;
@@ -165,34 +148,24 @@ html::-webkit-scrollbar-thumb:hover {
   font-size: 18px;
   box-sizing: border-box;
 }
-
-.search-form button:hover {
-  background-color: #ddd;
-}
-
-/* Iconos de actividad */
-.iconos-act {
+html .iconos-act {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
 }
-
-.iconos-act img {
+html .iconos-act img {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
-
-.iconos-act img.icono-registro {
+html .iconos-act img .icono-registro {
   width: 50px;
   height: 50px;
   object-fit: contain;
   vertical-align: bottom;
 }
-
-/*Estilos de titulo index*/
 
 /*ESTRUCTURA DEL MAIN*/
 #main {
@@ -204,36 +177,42 @@ html::-webkit-scrollbar-thumb:hover {
   padding: 20px;
   margin: 0;
   box-sizing: border-box;
+  /*Estilos de carrusel en index*/
+  /*Estilos de categorias index*/
+  /*Estilo contenedor de categorias*/
+  /*Esilos categoria llaveros*/
 }
-
-.titulo-main {
+#main .titulo-main {
   text-align: center;
   padding: 50px;
   width: 100%;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: rgb(24, 24, 65);
 }
-
-/*Estilos de carrusel en index*/
-
-.carousel {
-    max-width: 1200px;
-    margin: 0 auto;
+#main .carousel {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-.carousel-image-container {
-    width: 100%;
-    max-height: 600px;
+#main .carousel .carousel-image-container {
+  width: 100%;
+  max-height: 600px;
 }
-
-/*Estilos de categorias index*/
-.secciones-index {
+#main .carousel .carousel-control-prev,
+#main .carousel .carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+#main .carousel .carousel-control-prev span,
+#main .carousel .carousel-control-next span {
+  width: 50px;
+  height: 50px;
+}
+#main .secciones-index {
   text-align: center;
   margin-top: 40px 0;
   background-color: #e0f7f7;
 }
-
-.categorias-index {
+#main .secciones-index .categorias-index {
   margin-bottom: 20px;
   margin-top: 40px;
   font-size: 40px;
@@ -241,8 +220,7 @@ html::-webkit-scrollbar-thumb:hover {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(24, 24, 65);
 }
-
-.categorias-index button {
+#main .secciones-index .categorias-index button {
   margin-top: 10px;
   padding: 10px;
   width: 100%;
@@ -250,45 +228,12 @@ html::-webkit-scrollbar-thumb:hover {
   border: none;
   cursor: pointer;
 }
-
-.img-categorias-index {
+#main .secciones-index .img-categorias-index {
   display: inline-block;
   width: 100%;
   margin-bottom: 60px;
 }
-
-.img-categorias-index div {
-  display: inline-block;
-  width: 100%;
-  margin: 1%;
-  padding: 16px;
-  background-color: white;
-  border-radius: 27px;
-  box-sizing: border-box;
-  vertical-align: top;
-}
-
-@media only screen and (min-width: 768px) {
-  .img-categorias-index div {
-    width: 45%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .img-categorias-index div {
-    width: 22%;
-  }
-}
-
-.img-categorias-index img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  box-sizing: border-box;
-  border-radius: 13px;
-}
-
-.img-categorias-index button {
+#main .secciones-index .img-categorias-index .btn-cat-index {
   background-color: rgb(35, 179, 179);
   color: white;
   border: none;
@@ -303,47 +248,67 @@ html::-webkit-scrollbar-thumb:hover {
   margin-top: 30px;
   border-radius: 8px;
 }
-
-.secciones-index button:hover {
+#main .secciones-index .img-categorias-index .btn-cat-index:hover {
   background-color: rgb(32, 171, 255);
   color: rgb(255, 255, 255);
   border-radius: 8px;
   text-decoration: none;
 }
-
-.texto-de-introduccion {
+#main .secciones-index .img-categorias-index .imagen-categorias {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  box-sizing: border-box;
+  border-radius: 13px;
+}
+#main .secciones-index .img-categorias-index div {
+  display: inline-block;
+  width: 100%;
+  margin: 1%;
+  padding: 16px;
+  background-color: white;
+  border-radius: 27px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+@media only screen and (min-width: 768px) {
+  #main .secciones-index .img-categorias-index div {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #main .secciones-index .img-categorias-index div {
+    width: 22%;
+  }
+}
+#main .texto-de-introduccion {
   margin-bottom: 80px;
   line-height: 1.6;
   font-weight: bold;
   color: rgb(24, 24, 65);
+  /*ESTILOS PAGINA TIENDA CON FLEXBOX*/
+  /*Estructura del Main*/
 }
-
-.parrafo1-index,
-.parrafo2-index,
-.parrafo3-index {
+#main .texto-de-introduccion .parrafo1-index,
+#main .texto-de-introduccion .parrafo2-index,
+#main .texto-de-introduccion .parrafo3-index {
   margin-bottom: 30px;
   line-height: 1.6;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  -family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
-.parrafo3-index {
+#main .texto-de-introduccion .parrafo3-index {
   margin-bottom: 40px;
 }
-
-/*ESTILOS PAGINA TIENDA CON FLEXBOX*/
-/*Estructura del Main*/
-.titulo-tienda {
+#main .texto-de-introduccion .titulo-tienda {
   text-align: center;
   padding: 20px;
   width: 100%;
   margin: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: rgb(7, 138, 138);
+  /*Estilos de parrafo en tienda*/
 }
-
-/*Estilos de parrafo en tienda*/
-.invitacion-tienda {
+#main .texto-de-introduccion .titulo-tienda .invitacion-tienda {
   text-align: center;
   padding: 10px;
   width: 100%;
@@ -352,39 +317,23 @@ html::-webkit-scrollbar-thumb:hover {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(24, 24, 65);
 }
-
-/*Estilo contenedor de categorias*/
-.contenedor-categorias {
+#main .contenedor-categorias {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 10px;
   position: relative;
   flex-direction: column;
+  /*Estilos barra orden de producto*/
 }
-
-@media only screen and (min-width: 768px) {
-  .contenedor-categorias {
-    flex-direction: row;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .contenedor-categorias {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.categorias-tienda {
+#main .contenedor-categorias .categorias-tienda {
   display: flex;
   flex-direction: column;
   padding: 60px;
   align-items: flex-start;
   padding: 40px;
 }
-
-.titulo-categorias {
+#main .contenedor-categorias .categorias-tienda .titulo-categorias {
   padding: 20px;
   width: 100%;
   margin: 5px;
@@ -393,8 +342,7 @@ html::-webkit-scrollbar-thumb:hover {
   font-size: 18px;
   align-items: flex-start;
 }
-
-.lista-categorias {
+#main .contenedor-categorias .lista-categorias {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -405,9 +353,31 @@ html::-webkit-scrollbar-thumb:hover {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(79, 79, 185);
 }
-
-/*Esilos categoria llaveros*/
-.categoria-llaveros {
+#main .contenedor-categorias .barra-orden-productos {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+#main .contenedor-categorias .barra-orden-productos select {
+  padding: 3px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+@media only screen and (min-width: 768px) {
+  #main .contenedor-categorias {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #main .contenedor-categorias {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#main .categoria-llaveros {
   padding: 60px;
   width: 100%;
   margin: 10px;
@@ -417,9 +387,9 @@ html::-webkit-scrollbar-thumb:hover {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
+  /*Estilos de Boton Agregar al carrito y me gusta*/
 }
-
-.categoria-llaveros img {
+#main .categoria-llaveros img {
   background-color: white;
   border-radius: 27px;
   width: 100%;
@@ -427,35 +397,25 @@ html::-webkit-scrollbar-thumb:hover {
   height: auto;
   border-radius: 13px;
 }
-
-.llavero1,
-.llavero2,
-.llavero3,
-.llavero4 {
+#main .categoria-llaveros .llavero1,
+#main .categoria-llaveros .llavero2,
+#main .categoria-llaveros .llavero3,
+#main .categoria-llaveros .llavero4 {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-
-.producto-llavero img {
-  width: 100%;
-  height: auto;
-}
-
-.informacion-productos {
+#main .categoria-llaveros .informacion-productos {
   padding: 20px;
   border: 1px solid transparent;
   margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
 }
-
-/*Estilos de Boton Agregar al carrito y me gusta*/
-.boton-carrito {
-  background-color: #007bff; /* Color azul */
+#main .categoria-llaveros .boton-carrito {
+  background-color: #007bff;
   color: white;
   padding: 10px 15px;
   font-size: 12px;
@@ -465,13 +425,11 @@ html::-webkit-scrollbar-thumb:hover {
   transition: background-color 0.3s ease, transform 0.2s ease;
   font-family: "Arial", sans-serif;
 }
-
-.boton-carrito:hover {
+#main .categoria-llaveros .boton-carrito:hover {
   background-color: #0056b3;
   transform: scale(1.05);
 }
-
-.like-link {
+#main .categoria-llaveros .like-link {
   color: #007bff;
   text-decoration: none;
   font-size: 15px;
@@ -480,35 +438,20 @@ html::-webkit-scrollbar-thumb:hover {
   transition: color 0.3s ease, transform 0.2s ease;
   font-family: "Arial", sans-serif;
 }
-
-.like-link:hover {
+#main .categoria-llaveros .like-link:hover {
   color: #0056b3;
   transform: scale(1.1);
 }
-
-.like-link:active {
+#main .categoria-llaveros:active {
   transform: scale(0.95);
 }
-
-/*Barra orden de producto*/
-.barra-orden-productos {
-  display: flex;
-  gap: 10px;
-  justify-content: flex-end;
+#main .productos-llaveros img {
+  width: 100%;
+  height: auto;
 }
 
-.barra-orden-productos select {
-  padding: 3px;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: white;
-  font-family: "Times New Roman", Times, serif;
-}
-
-/*ESTILOS PAGINA TIENDA CON CSS GRID*/
-/*Estilos de contenedor principal secciones Blog*/
-.secciones-blog {
+/* el main termina aqui!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.barra-orden-productos .secciones-blog {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(100px, auto);
@@ -516,7 +459,7 @@ html::-webkit-scrollbar-thumb:hover {
   width: auto;
   justify-items: center;
   align-items: center;
-  grid-column: 1 / span 2;
+  grid-column: 1/span 2;
 }
 
 @media only screen and (max-width: 767px) {
@@ -524,19 +467,17 @@ html::-webkit-scrollbar-thumb:hover {
     grid-template-columns: 1fr;
   }
 }
-
 /*Estilos imagenes Blog*/
 .secciones-blog img {
-    width: 100%;
-    max-width: 250px;
+  width: 100%;
+  max-width: 250px;
 }
 
 @media only screen and (min-width: 992px) {
-    .secciones-blog img {
-        max-width: 350px;
-    }
+  .secciones-blog img {
+    max-width: 350px;
   }
-
+}
 .secciones-blog h2 {
   color: rgb(7, 138, 138);
   font-size: 25px;
@@ -569,20 +510,16 @@ html::-webkit-scrollbar-thumb:hover {
   width: 110px;
 }
 
-.redes-footer{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.redes-footer a {
-/*   text-decoration: none; */
+.redes-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .redes-footer img {
   width: 30px;
- /*  margin: 0 10px; */
+  /*  margin: 0 10px; */
   /* object-fit: contain; */
   transition: scale 0.5s ease;
 }
@@ -592,17 +529,16 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .redes-footer img.icono-whatsapp {
-    width: 45px;
-    margin-top: -9px;
-    margin-right: -10px;
-  }
-  
-  .redes-footer img.icono-instagram {
-    width: 40px;
-    margin-top: -2px;
-    margin-right: -10px;
-  }
-  
+  width: 45px;
+  margin-top: -9px;
+  margin-right: -10px;
+}
+
+.redes-footer img.icono-instagram {
+  width: 40px;
+  margin-top: -2px;
+  margin-right: -10px;
+}
 
 .copy-footer {
   font-size: 9px;
@@ -618,6 +554,7 @@ html::-webkit-scrollbar-thumb:hover {
   margin-left: 20px;
   padding: 3px;
 }
+
 .nav-copy-footer {
   padding: 0;
   border-radius: 10px;
@@ -658,15 +595,17 @@ html::-webkit-scrollbar-thumb:hover {
     align-items: center;
   }
 }
-
 @media only screen and (max-width: 630px) {
   .copy-footer {
     justify-content: center;
     align-items: center;
   }
 }
-
 .nav-footer a:hover {
   color: rgb(49, 103, 103);
 }
 
+/*ANIDACIONES*/
+/*ESTILOS DE NOSOTROS*/
+
+/*# sourceMappingURL=style.css.map */
