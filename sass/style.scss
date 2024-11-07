@@ -658,19 +658,32 @@ html {
 
     .formulario-contacto {
       h4 {
-        
+        font-weight: bold;
       }
 
       .tu-nombre {
-
+        font-size: 1.2rem;
+        font-weight: bold;
       }
       
       .tu-email {
-
+        font-size: 1.2rem;
+        font-weight: bold;
       }
 
       .tu-mensaje {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
 
+      button {
+        margin-top: 10px;
+        padding: 10px;
+        width: auto;
+        background-color: #f0f0f0;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
       }
     }
   }
