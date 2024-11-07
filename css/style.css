@@ -95,10 +95,6 @@ html body #header .navbar .container-fluid .collapse .navbar-nav .nav-link:hover
     padding-bottom: 0;
   }
 }
-html body .main-container {
-  max-width: 1900px;
-  margin: 0 auto;
-}
 html .logo img {
   width: 100px;
   height: 100px;
@@ -183,6 +179,11 @@ html .iconos-act img .icono-registro {
   /*Esilos categoria llaveros*/
   /*ESTILOS PAGINA BLOG CON CSS GRID*/
   /*Estilos de contenedor principal secciones Blog*/
+  /*Estilos de pagina Nostros*/
+}
+#main .main-container {
+  max-width: 1500px;
+  margin: 0 auto;
 }
 #main .titulo-main {
   text-align: center;
@@ -317,6 +318,7 @@ html .iconos-act img .icono-registro {
   margin: 10px;
   border: 10px solid transparent;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
   color: rgb(24, 24, 65);
 }
 #main .contenedor-categorias {
@@ -469,6 +471,8 @@ html .iconos-act img .icono-registro {
 #main .secciones-blog p {
   font-size: 17px;
   padding: 20px;
+  font-weight: bold;
+  color: rgb(24, 24, 65);
 }
 #main .secciones-blog img {
   width: 100%;
@@ -486,6 +490,28 @@ html .iconos-act img .icono-registro {
 }
 #main .titulo-blog {
   color: rgb(7, 138, 138);
+}
+#main .main-container .logo-nosotros img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+#main .informacion-nosotros h1 {
+  color: rgb(7, 138, 138);
+}
+#main .informacion-nosotros p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+  -family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: rgb(24, 24, 65);
+}
+#main .img-nosotros img {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* el main termina aqui!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
