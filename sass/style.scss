@@ -585,17 +585,99 @@ html {
       font-weight: bold;
       color: rgb(24, 24, 65);
     }
+  }
+
+  .img-nosotros {
+    img {
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  /*Estilos de pagina Contacto*/
+  .main-container {
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
     }
 
-    .img-nosotros {
+    .tel-contacto {
+      h2 {
+        font-weight: bold;
+        font-size: 1.7rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .email-contacto {
+      h2 {
+        font-weight: bold;
+        font-size: 1.7rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .img-contacto {
       img {
-        max-width: 600px;
+        max-width: 400px;
         margin: 0 auto;
-        position: relative;
         width: 100%;
         overflow: hidden;
       }
     }
+
+    .redes-sociales {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+
+      h2 {
+        font-weight: bold;
+        font-size: 1.7rem;
+      }
+
+      img {
+        width: 30px;
+        transition: scale 0.5s ease;
+
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
+
+    .formulario-contacto {
+      h4 {
+        
+      }
+
+      .tu-nombre {
+
+      }
+      
+      .tu-email {
+
+      }
+
+      .tu-mensaje {
+
+      }
+    }
+  }
+
+  
+
+
 } /* el main termina aqui!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 /*ESTILOS FOOTER*/

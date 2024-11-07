@@ -180,6 +180,7 @@ html .iconos-act img .icono-registro {
   /*ESTILOS PAGINA BLOG CON CSS GRID*/
   /*Estilos de contenedor principal secciones Blog*/
   /*Estilos de pagina Nostros*/
+  /*Estilos de pagina Contacto*/
 }
 #main .main-container {
   max-width: 1500px;
@@ -513,7 +514,47 @@ html .iconos-act img .icono-registro {
   width: 100%;
   overflow: hidden;
 }
-
+#main .main-container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+#main .main-container .tel-contacto h2 {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+#main .main-container .tel-contacto p {
+  font-size: 1.2rem;
+}
+#main .main-container .email-contacto h2 {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+#main .main-container .email-contacto p {
+  font-size: 1.2rem;
+}
+#main .main-container .img-contacto img {
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+#main .main-container .redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+#main .main-container .redes-sociales h2 {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+#main .main-container .redes-sociales img {
+  width: 30px;
+  transition: scale 0.5s ease;
+}
+#main .main-container .redes-sociales img:hover {
+  transform: scale(1.3);
+}
 /* el main termina aqui!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /*ESTILOS FOOTER*/
 #footer .area-redes-logo {
