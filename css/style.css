@@ -179,7 +179,7 @@ html .iconos-act img .icono-registro {
   /*Esilos categoria llaveros*/
   /*ESTILOS PAGINA BLOG CON CSS GRID*/
   /*Estilos de contenedor principal secciones Blog*/
-  /*Estilos de pagina Nostros*/
+  /*Estilos de pagina Nosotros*/
   /*Estilos de pagina Contacto*/
 }
 #main .main-container {
@@ -192,6 +192,7 @@ html .iconos-act img .icono-registro {
   width: 100%;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: rgb(24, 24, 65);
+  animation: 3s infinite alternate slidein;
 }
 #main .carousel {
   max-width: 1200px;
@@ -236,6 +237,7 @@ html .iconos-act img .icono-registro {
   display: inline-block;
   width: 100%;
   margin-bottom: 60px;
+  animation: show 3s infinite;
 }
 #main .secciones-index .img-categorias-index .btn-cat-index {
   background-color: rgb(35, 179, 179);
@@ -514,63 +516,91 @@ html .iconos-act img .icono-registro {
   width: 100%;
   overflow: hidden;
 }
-#main .main-container h1 {
+#main .formulario-contacto {
+  display: flex;
+  flex-direction: column;
+}
+#main .formulario-contacto h1 {
   font-size: 2rem;
   font-weight: bold;
 }
-#main .main-container .tel-contacto h2 {
+#main .formulario-contacto .tel-contacto {
+  gap: 30px;
+  margin-top: 20px;
+}
+#main .formulario-contacto .tel-contacto h2 {
   font-weight: bold;
   font-size: 1.7rem;
 }
-#main .main-container .tel-contacto p {
+#main .formulario-contacto .tel-contacto p {
   font-size: 1.2rem;
 }
-#main .main-container .email-contacto h2 {
+#main .formulario-contacto .email-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-top: 20px;
+}
+#main .formulario-contacto .email-redes .email-contacto h2 {
   font-weight: bold;
   font-size: 1.7rem;
 }
-#main .main-container .email-contacto p {
+#main .formulario-contacto .email-redes .email-contacto p {
   font-size: 1.2rem;
 }
-#main .main-container .img-contacto img {
+#main .formulario-contacto .email-redes .img-contacto img {
   max-width: 400px;
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
 }
-#main .main-container .redes-sociales {
+#main .formulario-contacto .email-redes .redes-sociales {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 20px;
   margin-top: 20px;
 }
-#main .main-container .redes-sociales h2 {
+#main .formulario-contacto .email-redes .redes-sociales h2 {
   font-weight: bold;
   font-size: 1.7rem;
 }
-#main .main-container .redes-sociales img {
+#main .formulario-contacto .email-redes .redes-sociales img {
   width: 30px;
   transition: scale 0.5s ease;
 }
-#main .main-container .redes-sociales img:hover {
+#main .formulario-contacto .email-redes .redes-sociales img:hover {
   transform: scale(1.3);
 }
-#main .main-container .formulario-contacto h4 {
+#main .formulario-contacto .img-contacto {
+  display: flex;
+}
+#main .formulario-contacto .datos-cliente h4 {
   font-weight: bold;
 }
-#main .main-container .formulario-contacto .tu-nombre {
+#main .formulario-contacto .datos-cliente .nombre-email {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+#main .formulario-contacto .datos-cliente .nombre-email .tu-nombre {
   font-size: 1.2rem;
   font-weight: bold;
 }
-#main .main-container .formulario-contacto .tu-email {
+#main .formulario-contacto .datos-cliente .nombre-email .tu-email {
   font-size: 1.2rem;
   font-weight: bold;
 }
-#main .main-container .formulario-contacto .tu-mensaje {
+#main .formulario-contacto .datos-cliente .tu-mensaje {
   font-size: 1.2rem;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
 }
-#main .main-container .formulario-contacto button {
+#main .formulario-contacto .datos-cliente button {
   margin-top: 10px;
   padding: 10px;
   width: auto;
@@ -671,5 +701,19 @@ html .iconos-act img .icono-registro {
 }
 
 /* el footer termina aqui!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@keyframes show {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
