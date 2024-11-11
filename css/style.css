@@ -516,6 +516,11 @@ html .iconos-act img .icono-registro {
   width: 100%;
   overflow: hidden;
 }
+#main .img-contacto img {
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
 #main .formulario-contacto {
   display: flex;
   flex-direction: column;
@@ -549,17 +554,16 @@ html .iconos-act img .icono-registro {
 #main .formulario-contacto .email-redes .email-contacto p {
   font-size: 1.2rem;
 }
-#main .formulario-contacto .email-redes .img-contacto img {
-  max-width: 400px;
-  margin: 0 auto;
-  width: 100%;
-  overflow: hidden;
-}
 #main .formulario-contacto .email-redes .redes-sociales {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-top: 20px;
+}
+#main .formulario-contacto .email-redes .redes-sociales .logos-redes .red-contacto {
+  display: flex;
+  display: inline-block;
+  width: 30px;
 }
 #main .formulario-contacto .email-redes .redes-sociales h2 {
   font-weight: bold;
@@ -571,9 +575,6 @@ html .iconos-act img .icono-registro {
 }
 #main .formulario-contacto .email-redes .redes-sociales img:hover {
   transform: scale(1.3);
-}
-#main .formulario-contacto .img-contacto {
-  display: flex;
 }
 #main .formulario-contacto .datos-cliente h4 {
   font-weight: bold;
@@ -608,6 +609,7 @@ html .iconos-act img .icono-registro {
   border: none;
   cursor: pointer;
   font-weight: bold;
+  width: 100%;
 }
 
 /* el main termina aqui!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
