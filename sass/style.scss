@@ -600,16 +600,31 @@ html {
   }
 
   /*Estilos de pagina Contacto*/
-  .img-contacto {
-    img {
-      max-width: 400px;
-      margin: 0 auto;
-      width: 100%;
-    }
-  }
+
   .formulario-contacto {
     display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    flex: 2;
+    display: flex;
     flex-direction: column;
+
+    .img-contacto {
+      flex: 1;
+      max-width: 400px;
+      margin-right: 20px;
+      flex-direction: row;
+      align-items: flex-start;
+  
+      img {
+        max-width: 400px;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+
+      }
+    }
 
     h1 {
       font-size: 2rem;
@@ -654,11 +669,16 @@ html {
         gap: 20px;
         margin-top: 20px;
 
-        .logos-redes
+        .logos-redes {
+          display: flex;
+          justify-content:first baseline;
+          gap:10px;
+
           .red-contacto{
             display: flex;
-            display: inline-block;
+            flex-direction: row;
             width: 30px;
+        }
         }
 
         h2 {
